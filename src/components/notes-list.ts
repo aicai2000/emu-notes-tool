@@ -147,6 +147,7 @@ export class NoteList extends LitElement {
         form > div{
             text-align: center;
         }
+        a {cursor: pointer;}
     `;
 
 
@@ -250,10 +251,8 @@ export class NoteList extends LitElement {
 
         if (dialog) {
         if (open) {
-            console.log("Showing dialog");
             dialog.showModal();
         } else {
-            console.log("Closing dialog");
             dialog.close();
         }
         }

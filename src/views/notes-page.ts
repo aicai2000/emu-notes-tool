@@ -1,9 +1,9 @@
 import { LitElement, css, html } from "lit";
 import { customElement, state } from "lit/decorators.js";
-import "./notes-list";
+import "../components/notes-list";
 import "./user-page";
 import { createContext, provide } from "@lit/context";
-import {UserLoggedInEvent} from "./user-login-signup";
+import {UserLoggedInEvent} from "../components/user-login-signup";
 
 import {
   APIUser,
