@@ -93,7 +93,6 @@ export class UserLogin extends LitElement {
         console.log(data);
 
         request
-          .base()
           .post("/login")
           .then((res) => {
             if (res.status === 200) {
@@ -213,7 +212,6 @@ _handleSignup(event: SubmitEvent) {
   const request = new FormDataRequest(data);
 
   request
-    .base()
     .post("/signup")
     .then((res) => {
       if (res.status === 200) {

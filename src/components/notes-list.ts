@@ -230,7 +230,6 @@ export class NoteList extends LitElement {
         console.log(data);
 
         request
-          .base()
           .post("/note")
           .then((res) => {
             if (res.status === 201) {
