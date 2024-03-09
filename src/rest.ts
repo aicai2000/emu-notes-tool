@@ -1,5 +1,5 @@
 
-const SERVER_ROOT = "https://express-backend-k4hv.onrender.com/";
+const SERVER_ROOT = "https://express-backend-k4hv.onrender.com/api";
 const API_PATH = "/api";
 const TOKEN_KEY = "JWT_AUTH_TOKEN";
 const API_ROOT = "https://express-backend-k4hv.onrender.com/api";
