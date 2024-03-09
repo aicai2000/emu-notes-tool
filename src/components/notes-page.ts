@@ -1,9 +1,7 @@
 import { LitElement, css, html, unsafeCSS } from "lit";
-import { customElement, property, state } from "lit/decorators.js";
+import { customElement, state } from "lit/decorators.js";
 import "./notes-list";
 import "./user-page";
-import resetCSS from "/src/styles/reset.css?inline";
-import pageCSS from "/src/styles/page.css?inline";
 import { createContext, provide } from "@lit/context";
 import {UserLoggedInEvent} from "./user-login-signup";
 
@@ -50,8 +48,6 @@ export let authContext = createContext<APIUser>("auth");
       }
 
       static styles = [
-        unsafeCSS(resetCSS),
-        unsafeCSS(pageCSS),
         css`
           :host {
             display: contents;

@@ -1,8 +1,6 @@
-import { LitElement, css, html, unsafeCSS } from "lit";
-import { customElement, property } from "lit/decorators.js";
+import { LitElement, css, html } from "lit";
+import { customElement } from "lit/decorators.js";
 import "./user-login-signup";
-import resetCSS from "/src/styles/reset.css?inline";
-import pageCSS from "/src/styles/page.css?inline";
 import {UserLoggedInEvent} from "./user-login-signup";
 
 
@@ -34,8 +32,6 @@ import {UserLoggedInEvent} from "./user-login-signup";
       }
 
       static styles = [
-        unsafeCSS(resetCSS),
-        unsafeCSS(pageCSS),
         css`
           :host {
             display: contents;
