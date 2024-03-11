@@ -2,8 +2,10 @@ import { LitElement, css, html } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import "../components/notes-list";
 import "./user-page";
+import  "./../styles/reset.css";
+import "../styles/page.css";
 import { createContext, provide } from "@lit/context";
-import {UserLoggedInEvent} from "../components/user-login-signup";
+import { UserLoggedInEvent } from "../components/user-login-signup";
 
 import {
   APIUser,
