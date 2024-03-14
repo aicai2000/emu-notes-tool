@@ -9,6 +9,8 @@ export function serverPath(path: string) {
           : `${SERVER_ROOT}${path}`;
  }
 
+ 
+
 export class APIUser {
   authenticated = false;
   username = "";
@@ -20,7 +22,7 @@ export class APIUser {
     const anon = new APIUser();
 
     console.log("Deauthenticating", user, APIUser._theUser);
-    if (user === APIUser._theUser) {
+    if (user.username === APIUser._theUser.username) {
       localStorage.removeItem(TOKEN_KEY);
       APIUser._theUser = anon;
     }
@@ -135,7 +137,7 @@ export class JSONRequest {
   }
 
   _url(path: string) {
-    console.log(SERVER_ROOT)
+    console.log(Window_ROOT)
     return (Window_ROOT.indexOf("localhost") > 0) 
             ? `${API_ROOT}${path}`
             : `${SERVER_ROOT}${path}`;
